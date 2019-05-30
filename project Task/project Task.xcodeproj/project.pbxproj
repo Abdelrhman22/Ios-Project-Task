@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1E9BF3AC22A00569008E7647 /* logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BF3AB22A00569008E7647 /* logo.jpeg */; };
+		1E9BF3AE22A0089A008E7647 /* show.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BF3AD22A0089A008E7647 /* show.png */; };
 		BA64D8AF229FF72A00D6191C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64D8AE229FF72900D6191C /* AppDelegate.swift */; };
 		BA64D8B1229FF72A00D6191C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64D8B0229FF72A00D6191C /* ViewController.swift */; };
 		BA64D8B4229FF72A00D6191C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA64D8B2229FF72A00D6191C /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		1E9BF3AB22A00569008E7647 /* logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpeg; sourceTree = "<group>"; };
+		1E9BF3AD22A0089A008E7647 /* show.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = show.png; sourceTree = "<group>"; };
 		BA64D8AB229FF72900D6191C /* project Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA64D8AE229FF72900D6191C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BA64D8B0229FF72A00D6191C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 		BA64D8AD229FF72900D6191C /* project Task */ = {
 			isa = PBXGroup;
 			children = (
+				1E9BF3AD22A0089A008E7647 /* show.png */,
 				1E9BF3AB22A00569008E7647 /* logo.jpeg */,
 				BA64D8AE229FF72900D6191C /* AppDelegate.swift */,
 				BA64D8B0229FF72A00D6191C /* ViewController.swift */,
@@ -129,6 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BA64D8BC229FF78D00D6191C /* LaunchScreen.storyboard in Resources */,
+				1E9BF3AE22A0089A008E7647 /* show.png in Resources */,
 				BA64D8B9229FF78D00D6191C /* Assets.xcassets in Resources */,
 				1E9BF3AC22A00569008E7647 /* logo.jpeg in Resources */,
 				BA64D8B4229FF72A00D6191C /* Main.storyboard in Resources */,
