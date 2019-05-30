@@ -15,6 +15,7 @@
 		BA64D8B7229FF72A00D6191C /* project_Task.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA64D8B5229FF72A00D6191C /* project_Task.xcdatamodeld */; };
 		BA64D8B9229FF78D00D6191C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA64D8B8229FF78D00D6191C /* Assets.xcassets */; };
 		BA64D8BC229FF78D00D6191C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA64D8BA229FF78D00D6191C /* LaunchScreen.storyboard */; };
+		BADA315222A08C1200658012 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BADA315122A08C1200658012 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		BA64D8B8229FF78D00D6191C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA64D8BB229FF78D00D6191C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA64D8BD229FF78D00D6191C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BADA315122A08C1200658012 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				BA64D8BA229FF78D00D6191C /* LaunchScreen.storyboard */,
 				BA64D8BD229FF78D00D6191C /* Info.plist */,
 				BA64D8B5229FF72A00D6191C /* project_Task.xcdatamodeld */,
+				BADA315122A08C1200658012 /* Images.xcassets */,
 			);
 			path = "project Task";
 			sourceTree = "<group>";
@@ -134,6 +137,7 @@
 				BA64D8BC229FF78D00D6191C /* LaunchScreen.storyboard in Resources */,
 				1E9BF3AE22A0089A008E7647 /* show.png in Resources */,
 				BA64D8B9229FF78D00D6191C /* Assets.xcassets in Resources */,
+				BADA315222A08C1200658012 /* Images.xcassets in Resources */,
 				1E9BF3AC22A00569008E7647 /* logo.jpeg in Resources */,
 				BA64D8B4229FF72A00D6191C /* Main.storyboard in Resources */,
 			);
