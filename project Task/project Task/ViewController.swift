@@ -9,14 +9,21 @@
 import UIKit
 import PasswordTextField
 class ViewController: UIViewController {
+    let validationRule = RegexRule(regex:"^[A-Z ]+$", errorMessage: "Password must contain only uppercase letters")
+
+    @IBOutlet weak var oldPasswordTF: PasswordTextField!
     
+    @IBOutlet weak var newPasswordTF: PasswordTextField!
     
+    @IBOutlet weak var confirmNewPasswordTF: PasswordTextField!
     
-    
+    @IBAction func updatebtn(_ sender: UIButton) {
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
- 
+        
     }
  
    
