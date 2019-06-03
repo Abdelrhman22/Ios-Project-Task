@@ -148,12 +148,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-452" y="188"/>
+            <point key="canvasLocation" x="-471" y="188"/>
         </scene>
         <!--Loading Page-->
         <scene sceneID="lsj-y1-hsc">
             <objects>
-                <viewController title="Loading Page" id="SNe-GY-Y7u" sceneMemberID="viewController">
+                <viewController title="Loading Page" id="SNe-GY-Y7u" customClass="LoadingPageViewController" customModule="project_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EQq-hT-XXj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,6 +178,9 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="faceookBtn:" destination="SNe-GY-Y7u" eventType="touchUpInside" id="lqs-WS-hh2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQP-L3-RFQ">
                                 <rect key="frame" x="50" y="368" width="275" height="40"/>
@@ -193,12 +196,18 @@
                                         <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="gmailBtn:" destination="SNe-GY-Y7u" eventType="touchUpInside" id="bbP-RL-myN"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SWy-Hz-5tX">
                                 <rect key="frame" x="50" y="443" width="275" height="30"/>
                                 <state key="normal" title="Already a Member ?">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="haveAccountBtn:" destination="SNe-GY-Y7u" eventType="touchUpInside" id="wcX-nn-1Ir"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6M-PX-EmI">
                                 <rect key="frame" x="80" y="543" width="215" height="40"/>
@@ -214,6 +223,9 @@
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signUpBtn:" destination="SNe-GY-Y7u" eventType="touchUpInside" id="TtV-KT-du7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -240,7 +252,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cmt-dw-YQi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="249" y="188"/>
+            <point key="canvasLocation" x="226" y="188"/>
         </scene>
     </scenes>
     <resources>
