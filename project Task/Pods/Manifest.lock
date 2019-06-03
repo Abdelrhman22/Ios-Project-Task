@@ -1,16 +1,33 @@
 PODS:
+  - Bolts (1.9.0):
+    - Bolts/AppLinks (= 1.9.0)
+    - Bolts/Tasks (= 1.9.0)
+  - Bolts/AppLinks (1.9.0):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.9.0)
+  - FBSDKCoreKit (4.32.0):
+    - Bolts (~> 1.7)
+  - FBSDKLoginKit (4.32.0):
+    - FBSDKCoreKit
   - PasswordTextField (1.1.0)
 
 DEPENDENCIES:
+  - FBSDKLoginKit
   - PasswordTextField
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
+    - Bolts
+    - FBSDKCoreKit
+    - FBSDKLoginKit
     - PasswordTextField
 
 SPEC CHECKSUMS:
+  Bolts: ac6567323eac61e203f6a9763667d0f711be34c8
+  FBSDKCoreKit: 55d7f2ac45d9c4b9b6119f4e43900fe84b9b7b1b
+  FBSDKLoginKit: 32ac05c2a59952c363c2e85aafa8f73ba93bcbad
   PasswordTextField: 35ee7f34448c3de061136cf2556a967f1a287476
 
-PODFILE CHECKSUM: b816f14e548d9c9797dfdb6f2e979523f631f79f
+PODFILE CHECKSUM: 2bbf07aa2f06c1d15b00a84816204464bcabde6b
 
 COCOAPODS: 1.5.0

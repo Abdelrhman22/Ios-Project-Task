@@ -7,5 +7,5 @@ target 'project Task' do
 
   # Pods for project Task
 pod 'PasswordTextField'
-
+pod 'FBSDKLoginKit'
 end
