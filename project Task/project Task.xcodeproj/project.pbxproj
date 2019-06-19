@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E29A2BE22B909670038642F /* updatePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E29A2BD22B909670038642F /* updatePasswordViewController.swift */; };
+		1E29A2C922B954820038642F /* hidePassword.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E29A2C722B954820038642F /* hidePassword.png */; };
+		1E29A2CA22B954820038642F /* showPassword.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E29A2C822B954820038642F /* showPassword.png */; };
+		1E4DCB0422BA43F100890AA3 /* verifyPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4DCB0322BA43F100890AA3 /* verifyPasswordViewController.swift */; };
+		1E4DCB0622BA5F3E00890AA3 /* update.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E4DCB0522BA5F3E00890AA3 /* update.storyboard */; };
+		1E4DCB0822BA67A800890AA3 /* close.png in Resources */ = {isa = PBXBuildFile; fileRef = 1E4DCB0722BA67A800890AA3 /* close.png */; };
 		1E9BF3AC22A00569008E7647 /* logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1E9BF3AB22A00569008E7647 /* logo.jpeg */; };
 		BA64D8AF229FF72A00D6191C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64D8AE229FF72900D6191C /* AppDelegate.swift */; };
 		BA64D8B1229FF72A00D6191C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA64D8B0229FF72A00D6191C /* ViewController.swift */; };
@@ -21,6 +27,12 @@
 /* Begin PBXFileReference section */
 		092F585113AA6AA2B6B0ACFC /* Pods-project Task.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project Task.debug.xcconfig"; path = "Pods/Target Support Files/Pods-project Task/Pods-project Task.debug.xcconfig"; sourceTree = "<group>"; };
 		1175054245D95C9A899149DB /* Pods_project_Task.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_project_Task.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E29A2BD22B909670038642F /* updatePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updatePasswordViewController.swift; sourceTree = "<group>"; };
+		1E29A2C722B954820038642F /* hidePassword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hidePassword.png; sourceTree = "<group>"; };
+		1E29A2C822B954820038642F /* showPassword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = showPassword.png; sourceTree = "<group>"; };
+		1E4DCB0322BA43F100890AA3 /* verifyPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verifyPasswordViewController.swift; sourceTree = "<group>"; };
+		1E4DCB0522BA5F3E00890AA3 /* update.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = update.storyboard; sourceTree = "<group>"; };
+		1E4DCB0722BA67A800890AA3 /* close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = close.png; sourceTree = "<group>"; };
 		1E9BF3AB22A00569008E7647 /* logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpeg; sourceTree = "<group>"; };
 		678122D4FBF5CF5E01A65777 /* Pods-project Task.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-project Task.release.xcconfig"; path = "Pods/Target Support Files/Pods-project Task/Pods-project Task.release.xcconfig"; sourceTree = "<group>"; };
 		BA64D8AB229FF72900D6191C /* project Task.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "project Task.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +58,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E4DCB0222BA43C300890AA3 /* updatePassword */ = {
+			isa = PBXGroup;
+			children = (
+				1E29A2BD22B909670038642F /* updatePasswordViewController.swift */,
+				1E4DCB0322BA43F100890AA3 /* verifyPasswordViewController.swift */,
+				1E4DCB0522BA5F3E00890AA3 /* update.storyboard */,
+			);
+			path = updatePassword;
+			sourceTree = "<group>";
+		};
 		7CDBEB8FAA35538654EEB2B1 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,8 +102,12 @@
 				BA64D8AE229FF72900D6191C /* AppDelegate.swift */,
 				BA64D8B0229FF72A00D6191C /* ViewController.swift */,
 				BA675BF822A550E10096E218 /* LoadingPageViewController.swift */,
+				1E4DCB0222BA43C300890AA3 /* updatePassword */,
 				BA64D8B2229FF72A00D6191C /* Main.storyboard */,
 				BA64D8B8229FF78D00D6191C /* Assets.xcassets */,
+				1E4DCB0722BA67A800890AA3 /* close.png */,
+				1E29A2C722B954820038642F /* hidePassword.png */,
+				1E29A2C822B954820038642F /* showPassword.png */,
 				BA64D8BA229FF78D00D6191C /* LaunchScreen.storyboard */,
 				BA64D8BD229FF78D00D6191C /* Info.plist */,
 				BA64D8B5229FF72A00D6191C /* project_Task.xcdatamodeld */,
@@ -159,8 +185,12 @@
 			files = (
 				BA64D8BC229FF78D00D6191C /* LaunchScreen.storyboard in Resources */,
 				BA64D8B9229FF78D00D6191C /* Assets.xcassets in Resources */,
+				1E4DCB0822BA67A800890AA3 /* close.png in Resources */,
 				1E9BF3AC22A00569008E7647 /* logo.jpeg in Resources */,
+				1E29A2C922B954820038642F /* hidePassword.png in Resources */,
 				BA64D8B4229FF72A00D6191C /* Main.storyboard in Resources */,
+				1E4DCB0622BA5F3E00890AA3 /* update.storyboard in Resources */,
+				1E29A2CA22B954820038642F /* showPassword.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,6 +262,8 @@
 				BA64D8B7229FF72A00D6191C /* project_Task.xcdatamodeld in Sources */,
 				BA64D8B1229FF72A00D6191C /* ViewController.swift in Sources */,
 				BA64D8AF229FF72A00D6191C /* AppDelegate.swift in Sources */,
+				1E4DCB0422BA43F100890AA3 /* verifyPasswordViewController.swift in Sources */,
+				1E29A2BE22B909670038642F /* updatePasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,7 +410,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "project Task/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "eg.gov.iti.project-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -393,7 +428,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "project Task/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "eg.gov.iti.project-Task";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

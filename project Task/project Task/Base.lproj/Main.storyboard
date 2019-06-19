@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="onp-DO-ZDk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,25 +10,87 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Verify Password View Controller-->
+        <scene sceneID="Y31-qs-XTE">
+            <objects>
+                <viewController id="3t0-uF-B03" customClass="verifyPasswordViewController" customModule="project_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Keh-Vm-uTR">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dv8-8F-eQ6">
+                                <rect key="frame" x="32" y="100" width="311" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="old Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="crI-lb-uTF" customClass="MDCTextField">
+                                <rect key="frame" x="32" y="164" width="311" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0R6-VG-BAp">
+                                <rect key="frame" x="269" y="269" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7bo-oR-Uck"/>
+                                    <constraint firstAttribute="width" constant="30" id="wgH-57-Xeo"/>
+                                </constraints>
+                                <state key="normal" image="showPassword.png"/>
+                                <connections>
+                                    <action selector="showOldPassword:" destination="3t0-uF-B03" eventType="touchUpInside" id="kKt-3N-BNl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gye-BY-UKO" customClass="MDCButton">
+                                <rect key="frame" x="32" y="374" width="311" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Verify">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="verifyPassword:" destination="3t0-uF-B03" eventType="touchUpInside" id="iiT-zS-PX0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="crI-lb-uTF" firstAttribute="leading" secondItem="YLC-xG-Etq" secondAttribute="leading" constant="32" id="CPk-sk-C5f"/>
+                            <constraint firstItem="Dv8-8F-eQ6" firstAttribute="leading" secondItem="YLC-xG-Etq" secondAttribute="leading" constant="32" id="P6O-nw-stG"/>
+                            <constraint firstItem="YLC-xG-Etq" firstAttribute="trailing" secondItem="Dv8-8F-eQ6" secondAttribute="trailing" constant="32" id="Pzn-HE-fNC"/>
+                            <constraint firstItem="YLC-xG-Etq" firstAttribute="trailing" secondItem="gye-BY-UKO" secondAttribute="trailing" constant="32" id="SpC-9t-lJe"/>
+                            <constraint firstItem="crI-lb-uTF" firstAttribute="top" secondItem="Dv8-8F-eQ6" secondAttribute="bottom" constant="40" id="TOF-wH-ey4"/>
+                            <constraint firstItem="YLC-xG-Etq" firstAttribute="trailing" secondItem="crI-lb-uTF" secondAttribute="trailing" constant="32" id="XL7-V5-hJW"/>
+                            <constraint firstItem="gye-BY-UKO" firstAttribute="top" secondItem="crI-lb-uTF" secondAttribute="bottom" constant="180" id="g9U-L1-WJ8"/>
+                            <constraint firstItem="Dv8-8F-eQ6" firstAttribute="top" secondItem="YLC-xG-Etq" secondAttribute="top" constant="80" id="hy7-kY-G9m"/>
+                            <constraint firstItem="gye-BY-UKO" firstAttribute="leading" secondItem="YLC-xG-Etq" secondAttribute="leading" constant="32" id="na9-pI-m5N"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YLC-xG-Etq"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ijc-uu-Cwl"/>
+                    <connections>
+                        <outlet property="oldPasswordBtn" destination="0R6-VG-BAp" id="Qek-34-KcX"/>
+                        <outlet property="oldPasswordTF" destination="crI-lb-uTF" id="U7b-kW-0Bi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ggK-5i-sxQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-660" y="196.55172413793105"/>
+        </scene>
+        <!--Update Password View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="project_Task" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="updatePasswordViewController" customModule="project_Task" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="xyF-IB-YIH">
-                                <rect key="frame" x="50" y="60" width="275" height="128"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="128" id="oyy-SO-ceP"/>
-                                </constraints>
-                            </imageView>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="old Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CWY-Gx-i68" customClass="PasswordTextField" customModule="PasswordTextField">
-                                <rect key="frame" x="16" y="294" width="343" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="Yiv-KE-eyH"/>
-                                </constraints>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="new Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BH6-px-0i7" customClass="MDCTextField">
+                                <rect key="frame" x="32" y="164" width="311" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -44,37 +106,8 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="new Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BH6-px-0i7" customClass="PasswordTextField" customModule="PasswordTextField">
-                                <rect key="frame" x="16" y="369" width="343" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="496-Z7-B1n"/>
-                                </constraints>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="color" keyPath=" layer.borderColor">
-                                        <color key="value" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="1"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Update Your Password" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hky-jS-zNl">
-                                <rect key="frame" x="50" y="238" width="275" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cx5-EA-B51" customClass="PasswordTextField" customModule="PasswordTextField">
-                                <rect key="frame" x="16" y="444" width="343" height="40"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="T23-7s-6n4"/>
-                                </constraints>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cx5-EA-B51" customClass="MDCTextField">
+                                <rect key="frame" x="32" y="234" width="311" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -91,47 +124,60 @@
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KCT-3l-bZa">
-                                <rect key="frame" x="60" y="554" width="255" height="40"/>
+                                <rect key="frame" x="32" y="304" width="311" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="40" id="GZT-Vc-Fz5"/>
-                                </constraints>
                                 <state key="normal" title="Update Password">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                        <integer key="value" value="10"/>
+                                        <integer key="value" value="15"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xdZ-zK-Hcg">
+                                <rect key="frame" x="210" y="549" width="31" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="8Qa-zD-FE5"/>
+                                    <constraint firstAttribute="height" constant="30" id="zFH-eZ-pDv"/>
+                                </constraints>
+                                <state key="normal" image="showPassword.png"/>
                                 <connections>
-                                    <action selector="updatebtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pAJ-VC-OAu"/>
+                                    <action selector="showNewPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7mQ-br-m2T"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mtS-1W-BIJ">
+                                <rect key="frame" x="263" y="549" width="31" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JaO-2e-FTh"/>
+                                    <constraint firstAttribute="width" constant="30" id="clP-JA-oZ0"/>
+                                </constraints>
+                                <state key="normal" image="showPassword.png"/>
+                                <connections>
+                                    <action selector="showConfirmPassword:" destination="BYZ-38-t0r" eventType="touchUpInside" id="U3K-RX-sMA"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a New Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fqF-9w-fUQ">
+                                <rect key="frame" x="32" y="100" width="311" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="cx5-EA-B51" firstAttribute="top" secondItem="BH6-px-0i7" secondAttribute="bottom" constant="35" id="3Do-FD-Cov"/>
-                            <constraint firstItem="BH6-px-0i7" firstAttribute="top" secondItem="CWY-Gx-i68" secondAttribute="bottom" constant="35" id="5ca-pb-6ih"/>
-                            <constraint firstItem="Hky-jS-zNl" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="81G-Ki-dJA"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Hky-jS-zNl" secondAttribute="trailing" constant="50" id="EEe-7y-lZc"/>
-                            <constraint firstItem="CWY-Gx-i68" firstAttribute="top" secondItem="Hky-jS-zNl" secondAttribute="bottom" constant="35" id="INW-X1-1p7"/>
-                            <constraint firstItem="BH6-px-0i7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="SjY-DC-ZTT"/>
-                            <constraint firstItem="CWY-Gx-i68" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="TJu-N0-Cfd"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CWY-Gx-i68" secondAttribute="trailing" constant="16" id="Ugt-9L-f1z"/>
-                            <constraint firstItem="Hky-jS-zNl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="Uyw-C3-ruo"/>
-                            <constraint firstItem="KCT-3l-bZa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="VTh-Ef-tfK"/>
-                            <constraint firstItem="xyF-IB-YIH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="WLk-ZZ-kR0"/>
-                            <constraint firstItem="KCT-3l-bZa" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ZAS-2x-fE1"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BH6-px-0i7" secondAttribute="trailing" constant="16" id="bdM-91-oLq"/>
-                            <constraint firstItem="Hky-jS-zNl" firstAttribute="top" secondItem="xyF-IB-YIH" secondAttribute="bottom" constant="50" id="crd-k2-W93"/>
-                            <constraint firstItem="cx5-EA-B51" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="h5M-64-e9K"/>
-                            <constraint firstItem="xyF-IB-YIH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="j8R-PN-ue3"/>
-                            <constraint firstItem="xyF-IB-YIH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mxt-2J-Ngr"/>
-                            <constraint firstItem="KCT-3l-bZa" firstAttribute="top" secondItem="cx5-EA-B51" secondAttribute="bottom" constant="70" id="psh-pP-KEp"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KCT-3l-bZa" secondAttribute="trailing" constant="60" id="qQw-Fa-fVR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cx5-EA-B51" secondAttribute="trailing" constant="16" id="qnb-kG-XzG"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="xyF-IB-YIH" secondAttribute="trailing" constant="50" id="un6-Rj-MCx"/>
+                            <constraint firstItem="BH6-px-0i7" firstAttribute="top" secondItem="fqF-9w-fUQ" secondAttribute="bottom" constant="40" id="7A6-1J-gXg"/>
+                            <constraint firstItem="cx5-EA-B51" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Gvl-tj-Grn"/>
+                            <constraint firstItem="KCT-3l-bZa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Hvi-rn-BsO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="BH6-px-0i7" secondAttribute="trailing" constant="32" id="SHA-Ng-UqA"/>
+                            <constraint firstItem="fqF-9w-fUQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Scz-oh-2cJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="fqF-9w-fUQ" secondAttribute="trailing" constant="32" id="avo-aA-3g9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cx5-EA-B51" secondAttribute="trailing" constant="32" id="e9N-KD-GBw"/>
+                            <constraint firstItem="cx5-EA-B51" firstAttribute="top" secondItem="BH6-px-0i7" secondAttribute="bottom" constant="40" id="fMQ-J5-Qiv"/>
+                            <constraint firstItem="BH6-px-0i7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="kji-NT-2lq"/>
+                            <constraint firstItem="fqF-9w-fUQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="oig-qc-Z3p"/>
+                            <constraint firstItem="KCT-3l-bZa" firstAttribute="top" secondItem="cx5-EA-B51" secondAttribute="bottom" constant="40" id="s8k-aP-D3O"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KCT-3l-bZa" secondAttribute="trailing" constant="32" id="xe5-o5-3oe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <userDefinedRuntimeAttributes>
@@ -140,15 +186,17 @@
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </view>
+                    <navigationItem key="navigationItem" id="ulq-HD-jle"/>
                     <connections>
-                        <outlet property="confirmNewPasswordTF" destination="cx5-EA-B51" id="7Yk-ZY-ySr"/>
-                        <outlet property="newPasswordTF" destination="BH6-px-0i7" id="uNr-dy-pqP"/>
-                        <outlet property="oldPasswordTF" destination="CWY-Gx-i68" id="oQA-Bz-6w2"/>
+                        <outlet property="confirmPasswordBtn" destination="mtS-1W-BIJ" id="tna-Gd-dHR"/>
+                        <outlet property="confirmPasswordTF" destination="cx5-EA-B51" id="cfY-Sq-Xrf"/>
+                        <outlet property="newPasswordBtn" destination="xdZ-zK-Hcg" id="AH9-ro-0OQ"/>
+                        <outlet property="newPasswordTF" destination="BH6-px-0i7" id="2eI-4q-isJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-710" y="197"/>
+            <point key="canvasLocation" x="92" y="196.55172413793105"/>
         </scene>
         <!--Loading Page-->
         <scene sceneID="lZX-xz-QgS">
@@ -286,7 +334,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="guR-AA-qwT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-46" y="197"/>
+            <point key="canvasLocation" x="860" y="196"/>
         </scene>
         <!--Add Organizer-->
         <scene sceneID="syb-fp-kGf">
@@ -351,7 +399,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7zL-zb-hqE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="687" y="197"/>
+            <point key="canvasLocation" x="1535" y="197"/>
         </scene>
         <!--Update Organizer-->
         <scene sceneID="z8B-z9-NPh">
@@ -718,10 +766,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UlC-PI-cXU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1480.8" y="255.47226386806599"/>
+            <point key="canvasLocation" x="2342" y="345"/>
         </scene>
     </scenes>
     <resources>
         <image name="logo.jpeg" width="218" height="128"/>
+        <image name="showPassword.png" width="128" height="128"/>
     </resources>
 </document>

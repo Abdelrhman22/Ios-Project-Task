@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="XJV-Gl-dnd">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Verify Password View Controller-->
+        <scene sceneID="F3A-Gr-3Ac">
+            <objects>
+                <viewController storyboardIdentifier="update" id="XJV-Gl-dnd" customClass="verifyPasswordViewController" customModule="project_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nCX-o6-mzm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Verify Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6f8-Wu-NX5">
+                                <rect key="frame" x="32" y="80" width="311" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="old Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WbZ-Xo-jX0" customClass="MDCTextField">
+                                <rect key="frame" x="32" y="144" width="311" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfg-8x-1Fq">
+                                <rect key="frame" x="207" y="100" width="36" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="OaC-AW-giP"/>
+                                    <constraint firstAttribute="height" constant="30" id="YS4-tt-gYf"/>
+                                </constraints>
+                                <state key="normal" image="showPassword.png"/>
+                                <connections>
+                                    <action selector="showOldPassword:" destination="XJV-Gl-dnd" eventType="touchUpInside" id="iCt-D6-uYD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ggo-dS-JBi" customClass="MDCButton">
+                                <rect key="frame" x="32" y="264" width="311" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Verify">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="verifyPassword:" destination="XJV-Gl-dnd" eventType="touchUpInside" id="bcV-Ah-AQy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WZ5-Ed-XVS">
+                                <rect key="frame" x="32" y="190" width="311" height="30"/>
+                                <state key="normal" title="Forget Password ?">
+                                    <color key="titleColor" red="0.1215686277" green="0.1294117719" blue="0.1411764771" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M7h-hL-C1s">
+                                <rect key="frame" x="16" y="20" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="Eji-xN-HpO"/>
+                                    <constraint firstAttribute="height" constant="20" id="IEe-cO-SAE"/>
+                                </constraints>
+                                <state key="normal" image="close.png"/>
+                                <connections>
+                                    <action selector="closeBtn:" destination="XJV-Gl-dnd" eventType="touchUpInside" id="scY-TI-dC1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="aJn-GO-TEb" firstAttribute="trailing" secondItem="WZ5-Ed-XVS" secondAttribute="trailing" constant="32" id="0om-h9-dC0"/>
+                            <constraint firstItem="M7h-hL-C1s" firstAttribute="leading" secondItem="aJn-GO-TEb" secondAttribute="leading" constant="16" id="1TX-ep-EVU"/>
+                            <constraint firstItem="WbZ-Xo-jX0" firstAttribute="leading" secondItem="aJn-GO-TEb" secondAttribute="leading" constant="32" id="CgP-aQ-PMt"/>
+                            <constraint firstItem="aJn-GO-TEb" firstAttribute="trailing" secondItem="Ggo-dS-JBi" secondAttribute="trailing" constant="32" id="I6A-rC-xAk"/>
+                            <constraint firstItem="aJn-GO-TEb" firstAttribute="trailing" secondItem="WbZ-Xo-jX0" secondAttribute="trailing" constant="32" id="WDM-qb-XrI"/>
+                            <constraint firstItem="aJn-GO-TEb" firstAttribute="trailing" secondItem="6f8-Wu-NX5" secondAttribute="trailing" constant="32" id="biS-mr-xcj"/>
+                            <constraint firstItem="WZ5-Ed-XVS" firstAttribute="leading" secondItem="aJn-GO-TEb" secondAttribute="leading" constant="32" id="dIx-i8-KWa"/>
+                            <constraint firstItem="6f8-Wu-NX5" firstAttribute="leading" secondItem="aJn-GO-TEb" secondAttribute="leading" constant="32" id="e6B-Qr-5CA"/>
+                            <constraint firstItem="M7h-hL-C1s" firstAttribute="top" secondItem="aJn-GO-TEb" secondAttribute="top" id="jgc-ug-EBV"/>
+                            <constraint firstItem="WZ5-Ed-XVS" firstAttribute="top" secondItem="WbZ-Xo-jX0" secondAttribute="bottom" constant="16" id="jls-m7-7MT"/>
+                            <constraint firstItem="Ggo-dS-JBi" firstAttribute="top" secondItem="WbZ-Xo-jX0" secondAttribute="bottom" constant="90" id="kr4-c7-6zM"/>
+                            <constraint firstItem="6f8-Wu-NX5" firstAttribute="top" secondItem="aJn-GO-TEb" secondAttribute="top" constant="60" id="rBw-Ac-Y8Z"/>
+                            <constraint firstItem="WbZ-Xo-jX0" firstAttribute="top" secondItem="6f8-Wu-NX5" secondAttribute="bottom" constant="40" id="w0E-kl-eBH"/>
+                            <constraint firstItem="Ggo-dS-JBi" firstAttribute="leading" secondItem="aJn-GO-TEb" secondAttribute="leading" constant="32" id="wjK-Mj-eth"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aJn-GO-TEb"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xVQ-1c-5a3"/>
+                    <connections>
+                        <outlet property="oldPasswordBtn" destination="sfg-8x-1Fq" id="zkc-S9-rQV"/>
+                        <outlet property="oldPasswordTF" destination="WbZ-Xo-jX0" id="N1c-7N-6iw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CS4-5D-4sJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-660" y="196.55172413793105"/>
+        </scene>
+        <!--Update Password View Controller-->
+        <scene sceneID="3iw-Cd-yHa">
+            <objects>
+                <viewController storyboardIdentifier="updateView" id="EYh-Wo-KoQ" customClass="updatePasswordViewController" customModule="project_Task" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eDl-kB-Xfd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="new Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Mjs-AC-aIv" customClass="MDCTextField">
+                                <rect key="frame" x="32" y="164" width="311" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath=" layer.borderColor">
+                                        <color key="value" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="confirm New Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bbN-dV-cjw" customClass="MDCTextField">
+                                <rect key="frame" x="32" y="234" width="311" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath=" layer.borderColor">
+                                        <color key="value" red="0.83741801979999997" green="0.83743780850000005" blue="0.83742713930000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNj-yT-v9b">
+                                <rect key="frame" x="32" y="304" width="311" height="30"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Update Password">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VGw-lc-zae">
+                                <rect key="frame" x="210" y="549" width="31" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="BLa-ZN-5GZ"/>
+                                    <constraint firstAttribute="width" constant="30" id="cnF-Vm-gk8"/>
+                                </constraints>
+                                <state key="normal" image="showPassword.png"/>
+                                <connections>
+                                    <action selector="showNewPassword:" destination="EYh-Wo-KoQ" eventType="touchUpInside" id="qOK-Zd-8sF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nfw-Le-Rmn">
+                                <rect key="frame" x="263" y="549" width="31" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="lGF-0r-NVD"/>
+                                    <constraint firstAttribute="width" constant="30" id="o6m-4z-H5w"/>
+                                </constraints>
+                                <state key="normal" image="showPassword.png"/>
+                                <connections>
+                                    <action selector="showConfirmPassword:" destination="EYh-Wo-KoQ" eventType="touchUpInside" id="xOJ-53-GOM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter a New Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wnj-3W-mnd">
+                                <rect key="frame" x="32" y="100" width="311" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mqc-7I-SL1">
+                                <rect key="frame" x="8" y="20" width="30" height="44"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                <state key="normal" title="&lt;"/>
+                                <connections>
+                                    <action selector="backBtn:" destination="EYh-Wo-KoQ" eventType="touchUpInside" id="HKX-x2-Q1Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wnj-3W-mnd" firstAttribute="top" secondItem="jk6-1f-cCy" secondAttribute="top" constant="80" id="5NO-CV-d5j"/>
+                            <constraint firstItem="bbN-dV-cjw" firstAttribute="top" secondItem="Mjs-AC-aIv" secondAttribute="bottom" constant="40" id="7i0-DA-1dX"/>
+                            <constraint firstItem="jk6-1f-cCy" firstAttribute="trailing" secondItem="FNj-yT-v9b" secondAttribute="trailing" constant="32" id="EM6-Xu-YqB"/>
+                            <constraint firstItem="bbN-dV-cjw" firstAttribute="leading" secondItem="jk6-1f-cCy" secondAttribute="leading" constant="32" id="H3L-PQ-QUu"/>
+                            <constraint firstItem="Mjs-AC-aIv" firstAttribute="top" secondItem="wnj-3W-mnd" secondAttribute="bottom" constant="40" id="Iga-KA-bXM"/>
+                            <constraint firstItem="Mqc-7I-SL1" firstAttribute="leading" secondItem="jk6-1f-cCy" secondAttribute="leading" constant="8" id="KC3-QR-cAU"/>
+                            <constraint firstItem="jk6-1f-cCy" firstAttribute="trailing" secondItem="bbN-dV-cjw" secondAttribute="trailing" constant="32" id="MfE-e6-jmu"/>
+                            <constraint firstItem="Mjs-AC-aIv" firstAttribute="leading" secondItem="jk6-1f-cCy" secondAttribute="leading" constant="32" id="NFc-jJ-vQC"/>
+                            <constraint firstItem="jk6-1f-cCy" firstAttribute="trailing" secondItem="wnj-3W-mnd" secondAttribute="trailing" constant="32" id="Nbr-rL-slb"/>
+                            <constraint firstItem="jk6-1f-cCy" firstAttribute="trailing" secondItem="Mjs-AC-aIv" secondAttribute="trailing" constant="32" id="PVx-Iq-cYU"/>
+                            <constraint firstItem="Mqc-7I-SL1" firstAttribute="top" secondItem="jk6-1f-cCy" secondAttribute="top" id="W3e-hb-fcG"/>
+                            <constraint firstItem="FNj-yT-v9b" firstAttribute="top" secondItem="bbN-dV-cjw" secondAttribute="bottom" constant="40" id="t0x-bd-vmT"/>
+                            <constraint firstItem="FNj-yT-v9b" firstAttribute="leading" secondItem="jk6-1f-cCy" secondAttribute="leading" constant="32" id="vr1-0A-xYM"/>
+                            <constraint firstItem="wnj-3W-mnd" firstAttribute="leading" secondItem="jk6-1f-cCy" secondAttribute="leading" constant="32" id="zZQ-Dd-3gs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jk6-1f-cCy"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="5"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <navigationItem key="navigationItem" id="Wie-vv-KUa"/>
+                    <connections>
+                        <outlet property="confirmPasswordBtn" destination="nfw-Le-Rmn" id="ZLH-42-Ddo"/>
+                        <outlet property="confirmPasswordTF" destination="bbN-dV-cjw" id="X52-go-6P6"/>
+                        <outlet property="newPasswordBtn" destination="VGw-lc-zae" id="Ej8-Ro-gSD"/>
+                        <outlet property="newPasswordTF" destination="Mjs-AC-aIv" id="rYG-Fd-OcK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CbS-QE-Mzw" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="196.55172413793105"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="close.png" width="128" height="128"/>
+        <image name="showPassword.png" width="128" height="128"/>
+    </resources>
+</document>
